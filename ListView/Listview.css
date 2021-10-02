@@ -1,0 +1,53 @@
+.container-fluid .line {
+	cursor: pointer;
+	position: relative;
+	height: 6rem;
+	width: 80vw;
+}
+
+.container-fluid .line span {
+	margin-top: 0px;
+	position: absolute;
+	font-size: 5rem;
+	opacity: 0.1;
+	transition: 0.5s all ease-in-out;
+}
+
+.container-fluid .line h4 {
+	opacity: 0.8;
+
+	height: 5rem;
+	padding-top: 1.5rem;
+	text-decoration: none;
+	position: relative;
+	color: black;
+	display: inline-block;
+	letter-spacing: 2px;
+	z-index: 1;
+	transition: all 1s;
+}
+.container-fluid .line h4:before {
+	content: '';
+	height: 1px;
+	width: 0;
+	height: 100%;
+	background-color: black;
+	position: absolute;
+	top: 0;
+	left: -10px;
+	z-index: -1;
+	transition: all 0.5s;
+}
+.container-fluid .line:hover > h4 {
+	color: white;
+	transform: translateX(54px);
+}
+
+.container-fluid .line:hover > h4::before {
+	width: 100%;
+}
+
+.container-fluid .line:hover > span {
+	opacity: 1;
+	color: #ffd580;
+}
