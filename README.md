@@ -7,9 +7,12 @@
 
 ## Contribution Guidelines
 
-First off, thanks for taking the time to contribute! :tada:
-
-The guidelines for contributing to this repository can be found in the [CONTRIBUTING.md file](https://github.com/PCCoE-Hacktoberfest-21/animated-components/blob/main/CONTRIBUTING.md). 
-
-These guidelines are a way to communicate how people should contribute. These guidelines will help you verify that you're submitting well-formed pull requests and opening useful issues. For both contributors and us, contribution guidelines will save time and hassle caused by improperly created pull requests or issues that have to be rejected and re-submitted.
+## How to Contribute?
+- Take a look at the existing issues or create your own Issues
+- Wait for the issue to be assigned to you after which you can start working on it.
+- Fork the Repository and create a branch for the issue you are working on.
+- Read the [Code of Conduct](CODE_OF_CONDUCT.md)
+- Create a Pull Request which will be reviewed by the maintainers and suggestions would be added to improve it (if needed)
+- Describe what your codeblock / function does in the PR.
+- Having difficulty in contributing? Read the [Contribution Guide](CONTRIBUTING.md) for a detailed explanation.
 
