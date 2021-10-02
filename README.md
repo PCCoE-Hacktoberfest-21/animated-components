@@ -1,6 +1,6 @@
 # animated-components
 
-### Create animated components using html , css , js
+Create animated components using html , css , js
 
 
 
