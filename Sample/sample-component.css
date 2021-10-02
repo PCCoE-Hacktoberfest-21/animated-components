@@ -1,0 +1,14 @@
+/* Add css here */
+
+*{
+    margin:10px;
+}
+
+.component-cards{
+    display: flex;
+    flex-direction: row;
+    
+}
+.card{
+    margin:10px;
+}
