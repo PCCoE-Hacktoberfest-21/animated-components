@@ -13,6 +13,7 @@ Create animated components using HTML, CSS, JS and get them featured on [here](h
 
 * Please take a look at the [sample component](https://github.com/PCCoE-Hacktoberfest-21/animated-components/tree/main/Sample) to understand the folder structure better.
 * You can contribute to as many components as you like. <b>You can add cool animated components of your own by creating an issue!</b>
+> NOTE: Please do NOT create a pull request unless the issue has been assigned to you else the pull request will be marked ```invalid```
 
 ### Folder Structure
 1. Create a new folder with the name of your component
