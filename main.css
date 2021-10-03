@@ -27,7 +27,7 @@
 }
 
 .card-text {
-  height: 7.2rem;
+  max-height: 7.2rem;
   line-height: 23px;
   display: -webkit-box;
   -webkit-line-clamp: 5;
