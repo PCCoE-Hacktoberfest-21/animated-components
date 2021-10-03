@@ -14,7 +14,7 @@
 }
 
 body {
-    background-image: var(--lg-lightcolor), url('https://images.pexels.com/photos/325193/pexels-photo-325193.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-image: var(--lg-lightcolor), url('Images/bg.jpeg');
     background-size: 100%;
     background-repeat: no-repeat;
     font-family: var(--myfont);
