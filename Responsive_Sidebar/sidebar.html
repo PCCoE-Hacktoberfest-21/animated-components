@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar</title>
+    <script
+      src="https://kit.fontawesome.com/678ccc3de5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="sidebar.css" />
+  </head>
+  <body>
+    
+    <!--mobile nav-->
+    <div class="mobile_nav">
+    <div class="navbar">
+    <i class="fas fa-bars nav_btn" id="nav_btn"></i>
+    
+    </div>
+    
+    <div class="mobile_nav_items">
+    <a href="#"><i class="fas fa-qrcode"></i><span>Dashboard</span></a>
+
+      <a href="#"><i class="fas fa-link"></i><span>Shortcuts</span></a>
+
+      <a href="#"><i class="fas fa-stream"></i><span>Overview</span></a>
+
+      <a href="#"><i class="fas fa-calendar-week"></i><span>Events</span></a>
+
+      <a href="#"><i class="fas fa-question-circle"></i><span>About</span></a>
+
+      <a href="#"><i class="fas fa-sliders-h"></i><span>Services</span></a>
+
+      <a href="#"><i class="fas fa-envelope"></i><span>Contact</span></a>
+    
+    </div>
+    
+    
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--mobile nav-->
+    <!--sidebar-->
+    <input type="checkbox" id="check" />
+    <label for="check"><i class="fas fa-bars" id="btn"></i></label>
+    <div class="sidebar">
+      <a href="#"><i class="fas fa-qrcode"></i><span>Dashboard</span></a>
+
+      <a href="#"><i class="fas fa-link"></i><span>Shortcuts</span></a>
+
+      <a href="#"><i class="fas fa-stream"></i><span>Overview</span></a>
+
+      <a href="#"><i class="fas fa-calendar-week"></i><span>Events</span></a>
+
+      <a href="#"><i class="fas fa-question-circle"></i><span>About</span></a>
+
+      <a href="#"><i class="fas fa-sliders-h"></i><span>Services</span></a>
+
+      <a href="#"><i class="fas fa-envelope"></i><span>Contact</span></a>
+    </div>
+    <!--sidebar-->
+
+    <div class="content"><h1>Dashboard</h1></div>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.nav_btn').click(function(){
+        $('.mobile_nav_items').toggleClass('active');
+      });
+    });
+    
+    
+    </script>
+  </body>
+</html>
