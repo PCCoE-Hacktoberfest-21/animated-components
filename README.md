@@ -23,13 +23,11 @@ Create animated components using HTML, CSS, JS and get them featured on [here](h
 ```
 <!--     Sample Component (Replace the name with your component name  -->
 
-      <div class="card text-white bg-info" style="width: 18rem;">
+      <div class="card" style="width: 18rem;">
         <div class="card-body">
-          <h5 class="card-title text-dark">Sample</h5>
-          <h6 class="card-subtitle mb-2 text-white">Component : Sample</h6>
+          <h5 class="card-title text-dark">Name of your component</h5>
           <p class="card-text">Add information about your navbar with contributors name.</p>
-          <a href="/animated-components/YOUR-FOLDER-NAME/YOUR-HTML-FILE.html" class="card-link text-warning"><strong>Link</strong></a>
-
+          <a href="/animated-components/YOUR-FOLDER-NAME/YOUR-HTML-FILE.html" class="card-link text-warning"><strong>Demo</strong></a>
         </div>
       </div>
 ```

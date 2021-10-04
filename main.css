@@ -1,14 +1,43 @@
-/* add your css here */
-
-*{
-    margin:10px;
+* {
+  margin: 10px;
+  
 }
 
-.component-cards{
-    display: flex;
-    flex-direction: row;
-    
+.component-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 19rem);
+  gap: 2rem;
+  grid-auto-rows: 16rem;
+  justify-content: center;
 }
-.card{
-    margin:10px;
+
+.card {
+  height: 16rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color:#17A2B8 !important;
+  color: white;
+}
+
+.card-body {
+  padding: 10px 8px !important;
+}
+
+.card-title {
+  font-size: 28px !important;
+}
+
+.card-text {
+  max-height: 7.2rem;
+  line-height: 23px;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: large;
+  display: flex;
+  align-items: center;
+}
+
+.card-link strong {
+  margin-left: 0;
 }
