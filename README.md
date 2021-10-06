@@ -2,10 +2,15 @@
 
 Create animated components using HTML, CSS, JS and get them featured on [here](https://pccoe-hacktoberfest-21.github.io/animated-components/#)
 
+## Latest Announcements 📢
 
+🔴 As we have a lot of people willing to contribute and fewer issues, please make sure you work on the task assigned to you within 5 days (or inform the maintainers that you are still working on it, by commenting on the issue itself)
+
+🔴 If we do not receive any updates from your end then we will have to assign the task to another willing contributor.
 
 
 ## Contribution Guidelines
+
 * Create a new folder with the name of your component <br> eg. If you are creating a Navbar Component then name your folder ```Navbar``` 
 * Add the html, css, js files in that folder (Don't add your component code to the index.html) <br> eg. If you are creating a Navbar then name your files ```Navbar.html, Navbar.js, Navbar.css```
 * Link the html file of your component to the link on the card created at [index.html](https://github.com/PCCoE-Hacktoberfest-21/animated-components/blob/main/index.html) file.
