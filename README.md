@@ -1,6 +1,6 @@
 # Cool Animated Components 😎
 
-Create animated components using HTML, CSS, JS and get them featured on [here](https://pccoe-hacktoberfest-21.github.io/animated-components/#)
+Create animated components using HTML, CSS, JS and get them featured [here](https://pccoe-hacktoberfest-21.github.io/animated-components/#)
 
 ## Latest Announcements 📢
 
