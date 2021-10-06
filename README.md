@@ -8,6 +8,8 @@ Create animated components using HTML, CSS, JS and get them featured on [here](h
 
 🔴 If we do not receive any updates from your end then we will have to assign the task to another willing contributor.
 
+🔴 If you come across an issue that has been open for a while but has no updates from the assigned person, you may comment on it to get assigned to the issue. 
+
 
 ## Contribution Guidelines
 
