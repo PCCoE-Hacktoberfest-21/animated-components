@@ -1,15 +1,22 @@
 # Cool Animated Components 😎
 
-Create animated components using HTML, CSS, JS and get them featured on [here](https://pccoe-hacktoberfest-21.github.io/animated-components/#)
+Create animated components using HTML, CSS, JS and get them featured [here](https://pccoe-hacktoberfest-21.github.io/animated-components/#)
 
+## Latest Announcements 📢
 
+🔴 As we have a lot of people willing to contribute and fewer issues, please make sure you work on the task assigned to you within 5 days (or inform the maintainers that you are still working on it, by commenting on the issue itself)
+
+🔴 If we do not receive any updates from your end then we will have to assign the task to another willing contributor.
+
+🔴 If you come across an issue that has been open for a while but has no updates from the assigned person, you may comment on it to get assigned to the issue. 
 
 
 ## Contribution Guidelines
+
 * Create a new folder with the name of your component <br> eg. If you are creating a Navbar Component then name your folder ```Navbar``` 
 * Add the html, css, js files in that folder (Don't add your component code to the index.html) <br> eg. If you are creating a Navbar then name your files ```Navbar.html, Navbar.js, Navbar.css```
 * Link the html file of your component to the link on the card created at [index.html](https://github.com/PCCoE-Hacktoberfest-21/animated-components/blob/main/index.html) file.
-* Create new cards each new component you make.
+* Create a new card for every new component that you make.
 
 * Please take a look at the [sample component](https://github.com/PCCoE-Hacktoberfest-21/animated-components/tree/main/Sample) to understand the folder structure better.
 * You can contribute to as many components as you like. <b>You can add cool animated components of your own by creating an issue!</b>
@@ -23,13 +30,11 @@ Create animated components using HTML, CSS, JS and get them featured on [here](h
 ```
 <!--     Sample Component (Replace the name with your component name  -->
 
-      <div class="card text-white bg-info" style="width: 18rem;">
+      <div class="card" style="width: 18rem;">
         <div class="card-body">
-          <h5 class="card-title text-dark">Sample</h5>
-          <h6 class="card-subtitle mb-2 text-white">Component : Sample</h6>
+          <h5 class="card-title text-dark">Name of your component</h5>
           <p class="card-text">Add information about your navbar with contributors name.</p>
-          <a href="/animated-components/YOUR-FOLDER-NAME/YOUR-HTML-FILE.html" class="card-link text-warning"><strong>Link</strong></a>
-
+          <a href="/animated-components/YOUR-FOLDER-NAME/YOUR-HTML-FILE.html" class="card-link text-warning"><strong>Demo</strong></a>
         </div>
       </div>
 ```

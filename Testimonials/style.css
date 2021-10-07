@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Festive&family=Merriweather&family=Oswald&family=Roboto+Condensed&family=Ubuntu&display=swap");
+
+:root {
+  --yellow: #facc15;
+  --dark-yellow : #EAB308;
+  --gray: #d4d4d8;
+  --dark-gray: #71717a;
+  --light-gray:#F4F4F5;
+  --blue : #0EA5E9;
+  --tone1-gray : #E5E7EB;
+  --tone2-gray : #F3F4F6;
+  --red: #FF0000;
+  --dark-red : #8B0000;
+  --dark-green: #9cc675;
+      --dark-yellow: #e89a3d;
+      --extra-light-brown:#fdf0d7;
+      --light-brown: #ecd5ab;
+      --dark-brown:#915b40;
+      --light-yellow:#f8e3a8;
+      --light-red:#f3ac99;
+      --light-teal:#a6c8cc;
+      --light-gray:#ddd5d6;
+			--theme-color2: #bf220a;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  transition: left 1s ease-in-out, right 1s ease-in-out;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('./images/bg2.jpg'); 
+  /*background-repeat: no-repeat; */
+  font-family: "Oswald", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  /* font-size :  */
+  overflow-x: hidden;
+}
+
+
+
+
+
+/* common css up */
+
+.testimonial p {
+	 font-size: 28px;
+	 letter-spacing: 0.02em;
+	 line-height: 35px;
+}
+ .testimonial .name {
+	 font-weight: bold;
+	 font-size: 18px;
+	 letter-spacing: 0.04em;
+	 line-height: 35px;
+	 text-align: left;
+}
+ .testimonial .designation {
+	 font-size: 14px;
+	 letter-spacing: 0.04em;
+	 text-align: left;
+	 color: #fff;
+	 opacity: 0.65;
+}
+ .unt {
+	 margin-bottom: 20px;
+	 margin-top: 60px;
+}
+ .hero-text {
+	 font-size: 30px;
+	 letter-spacing: 0.02em;
+	 color: #fff;
+}
+ .gallery-thumbs {
+	 height: 100%;
+}
+ .gallery-thumbs .swiper-wrapper {
+	 align-items: center;
+}
+ .gallery-thumbs .swiper-slide {
+	 background-position: center;
+	 background-size: cover;
+	 width: 250px !important;
+	 height: 330px;
+	 position: relative;
+}
+ .gallery-thumbs .swiper-slide img {
+	 filter: contrast(0.5) blur(1px);
+	 width: 100%;
+	 height: 100%;
+	 object-fit: cover;
+	 border-radius: 10px;
+}
+ .gallery-thumbs .swiper-slide-active img {
+	 filter: contrast(1) blur(0px) !important;
+}
+ .flex-row {
+	 display: -webkit-box;
+	 display: -ms-flexbox;
+	 display: flex;
+	 -ms-flex-wrap: wrap;
+	 flex-wrap: wrap;
+	 margin-right: -15px;
+	 margin-left: -15px;
+}
+ .flex-row .flex-col {
+	 -ms-flex-preferred-size: 0;
+	 flex-basis: 0;
+	 -webkit-box-flex: 1;
+	 -ms-flex-positive: 1;
+	 flex-grow: 1;
+	 max-width: 100%;
+	 position: relative;
+	 width: 100%;
+	 min-height: 1px;
+	 padding-right: 15px;
+	 padding-left: 15px;
+}
+
+.gallery-thumbs .swiper-wrapper {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+p{
+
+}
+
+.testimonial-section .quote {
+    width: 75%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.swiper-container.testimonial {
+    height: 80vh;
+}
+.testimonial-section .user-saying {
+    background: var(--theme-color2);
+    width: 60%;
+    color: #fff;
+    height: 100%;
+    border-radius:20px;
+}
+.testi-user-img {
+    width: 40%;
+}
+.testimonial-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
+}
+.testimonial-section .quote p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.8;
+    font-style: italic;
+    margin: 0;
+    
+}
+.quote-icon {
+    width: 38px;
+    display: block;
+    margin-bottom: 30px;
+   
+}
+
+p{
+    justify-content: center;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>TagCloud Examples</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            body {
+                font-family: sans-serif;
+                text-align: center;
+                background-color: #333;
+                color: aqua;
+                font-family: "Poppins", sans-serif;
+            }
+
+            .content .tagcloud {
+                display: inline-block;
+            }
+        </style>
+        <!-- custom style -->
+        <style>
+            .tagcloud {
+                font-size: 2em;
+            }
+
+            .tagcloud--item {
+                background-color: transparent;
+                border: 1px solid transparent;
+                cursor: pointer;
+            }
+
+            .tagcloud--item:hover {
+                text-decoration: underline;
+                -webkit-border-radius: 2px;
+                -moz-border-radius: 2px;
+                border-radius: 2px;
+                opacity: 1 !important;
+                z-index: 100 !important;
+            }
+
+            .light .tagcloud--item {
+                color: #fff;
+            }
+
+            .light .tagcloud--item:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+                border: 1px solid #fff;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="content">
+            <!-- content -->
+        </div>
+        <script type="text/javascript" src="TagCloud.min.js"></script>
+        <script>
+            var texts = [
+                "npm",
+                "Sass",
+                "JavaScript",
+                "CSS3",
+                "jQuey",
+                "Node.js",
+                "_lodash",
+                "SQL",
+                "Bootstrap",
+                "Gulp",
+                "BEM",
+                "ReactJS",
+                "JSON",
+                "Wordpress",
+                "ES5/ES6",
+                "Shopify",
+            ];
+
+            var tagCloud = TagCloud(".content", texts, {
+                // radius in px
+                radius: 300,
+
+                // animation speed
+                // slow, normal, fast
+                maxSpeed: "normal",
+                initSpeed: "normal",
+
+                // 0 = top
+                // 90 = left
+                // 135 = right-bottom
+                direction:135,
+
+                // interact with cursor move on mouse out
+                keep: true,
+            });
+            console.log(tc);
+        </script>
+        <!--<script>
+        // switch style
+        function toDefault() { document.body.classList.remove('light'); }
+        function toLight() { document.body.classList.add('light'); }
+        // add / remove tag
+        function addTag() {
+            if (!tc) return;
+            texts.push('New');
+            tc.update(texts);
+        }
+        function removeTag() {
+            if (!tc) return;
+            texts.pop();
+            tc.update(texts);
+        }
+        var otherTcs = [];
+        // create and destroy tagcloud
+        function toCreate() {
+            if (otherTcs.length >= 3) return;
+            otherTcs.push(TagCloud('.content', texts));
+        }
+        function toDestroy() {
+            var last = otherTcs[otherTcs.length - 1];
+            if (!last) return;
+            last.destroy();
+            otherTcs.pop();
+        }
+        // pause and resume tagcloud animation
+        function pause() {
+            [].concat(tc, otherTcs).forEach(function (e) { return e.pause() });
+        }
+        function resume() {
+            [].concat(tc, otherTcs).forEach(function (e) { return e.resume() });
+        }
+        // add and remove clickEvent
+        function clickEventHandler(e) {
+            if (e.target.className === 'tagcloud--item') {
+                window.open(`https://www.google.com/search?q=${e.target.innerText}`, '_blank');
+            }
+        }
+        function addClickEvent() {
+            var rootEl = document.querySelector('.content');
+            rootEl.addEventListener('click', clickEventHandler);
+        }
+        function removeClickEvent() {
+            var rootEl = document.querySelector('.content');
+            rootEl.removeEventListener('click', clickEventHandler);
+        }
+    </script>-->
+    </body>
+</html>
