@@ -1,0 +1,109 @@
+[data-color="green"]{
+    background-color: #C6DFC8;
+}
+
+[data-color="yellow"]{
+    background-color: #FFF3DE;
+}
+
+[data-color="peach"]{
+    background-color: #F6D5C2;
+}
+
+[data-color="pink"]{
+    background-color: #FFADBB;
+}
+
+[data-color="purple"]{
+    background-color: #D39CB6;
+}
+
+[data-color="deepPurple"]{
+    background-color: #B89ACF;
+}
+
+[data-color="white"]{
+    background-color: white;
+}
+
+table{
+    width: 85%;
+    height: 250px;
+    border-collapse: separate;
+    table-layout: fixed;
+}
+
+table td{
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px black solid;
+    cursor: pointer;
+  }
+
+#tableContainer{
+    margin: auto;
+}
+
+.dotContainer{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 40%;
+    float: left;
+}
+
+.dotContainer ul{
+    width: inherit;
+}
+
+.closeContainer{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    float: right;
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 10%;
+    cursor: pointer;
+    display: none;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card{
+    display: table-cell;
+    height: 250px;
+    width: 225px;
+    border: solid black 1px;
+    overflow: hidden;
+}
+
+.cardContainer{
+    position: relative;
+    width: inherit;
+    height: inherit;
+}
+
+html, body{
+    height: 100%;
+    margin: 30px;
+}
+
+div{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
