@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;1,100;1,200;1,300&display=swap');
+
+/* Footer Section */
+
+.footer_section{
+    padding: 120px 0px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 400;
+    
+}
+
+.footer_section #description-1{
+    font-family: 'Raleway',sans-serif;
+    font-size: medium;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.footer_section #heading-1{
+    font-family: sans-serif;
+    margin-left: 40px;
+}
+
+.footer_section #heading-2{
+    font-family: sans-serif;
+    margin-left: 30px;
+}
+
+.footer_section #Icons{
+    color:#F6D167;
+}
+.footer_section .list_items{
+    padding: 5px 5px;
+
+}
+
+.footer_section #heading-3{
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+
+
+
+
+.footer_section .social-icons{
+    color: #F6D167 !important;
+}
+
+
+.footer_section i{
+    padding-left:20px;
+}
+
+ul{
+    list-style: none;
+}
+
+
+input{
+    justify-content: left;
+    justify-items: auto;
+}
+
+.fa-telegram {
+	position: absolute;
+	right: 2rem;
+	font-size: 2rem;
+	color: #F6D167;
+}
+
+path{
+    fill: #F6D167;
+}
+
+@media (max-width :993px) and (min-width: 768px){
+    .footer_section{
+        font-size: small;
+    }
+}
+
+@media (max-width :768px) and (min-width: 500px){
+    .footer_section{
+        font-size: small;
+        text-align: center;
+    }
+    .footer_section #description-1{
+        width: fit-content;
+    }
+    .footer_section #heading-3{
+        margin-left: 20px;
+    }
+}
+
+
+
