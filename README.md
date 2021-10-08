@@ -10,6 +10,10 @@ Create animated components using HTML, CSS, JS and get them featured [here](http
 
 🔴 If you come across an issue that has been open for a while but has no updates from the assigned person, you may comment on it to get assigned to the issue. 
 
+🔴 Issues which have the ```unassigned``` label can be worked on. You can comment on thees issues and get assigned to them.
+
+🔴 Some issues can be worked upon by multiple people so if you see the ```unassigned``` label there you may comment on it
+
 
 ## Contribution Guidelines
 
