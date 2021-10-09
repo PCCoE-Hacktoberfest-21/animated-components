@@ -26,6 +26,7 @@ $(document).ready(function(){
                 $greatAunt.text("Card color: " + color);
                 $this.hide();
                 $parent.siblings(".closeContainer").show();
+
             });
         });
 

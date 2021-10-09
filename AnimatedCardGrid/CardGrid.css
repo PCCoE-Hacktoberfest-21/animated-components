@@ -31,7 +31,6 @@ table{
     height: 250px;
     border-collapse: separate;
     table-layout: fixed;
-    margin: auto;
 }
 
 table td{
@@ -54,7 +53,6 @@ table td{
     margin-left: 10px;
     width: 40%;
     float: left;
-
 }
 
 .dotContainer ul{
