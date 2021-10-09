@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Modal</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="signup.js">
+</head>
+<body>
+
+<button onclick="document.getElementById('id').style.display='block'" style="width:auto;">Sign Up</button>
+
+<div id="id" class="modal">
+  <span onclick="document.getElementById('id').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content">
+   
+    <div class="container">
+    <img src="img/books.webp" alt="books" width="400" height="400" id="book"/>
+      <h1>Sign Up</h1>
+      
+      <hr>
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Enter Name" name="name" required>
+
+      <label for="email"><b>E-mail</b></label>
+      <input type="text" placeholder="Enter E-mail" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <button type="submit" class="signupbtn">Sign Up</button>
+      <div class="clearfix">
+        <p>Already have an account?</p>
+        <button type="submit" class="loginbtn">Log In</button>
+      </div>
+    </div>
+    
+  </form>
+</div>
+</body>
+</html>
