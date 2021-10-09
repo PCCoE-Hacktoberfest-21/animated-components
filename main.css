@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +15,78 @@ body {
   min-height: 100vh;
   background: #232427 !important;
 }
+
+/* social media icons */
+.social_media_div {
+  position: fixed;
+  left: 0%;
+  top: 25%;
+}
+
+.social_media_div li {
+  list-style: none;
+  margin: 15px 0px;
+}
+
+.social_media_div li a i {
+  text-decoration: none;
+  padding: 15px 18px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 10px;
+  font-weight: bold;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#youtube{
+  border: 3px solid #dd4b39;
+  box-shadow: 0 0 15px #dd4b39;
+  transition: all 1s ease;
+}
+
+#gmail{
+  border: 3px solid #dd4b39;
+  box-shadow: 0 0 15px #dd4b39;
+  transition: all 1s ease;
+}
+
+#linkedin{
+  border: 3px solid #3b5998;
+  box-shadow: 0 0 15px #3b5998;
+  text-shadow: 0 0 15px #3b5998;
+  transition: all 1s ease;
+}
+
+#twitter{
+  border: 3px solid #3b5998;
+  box-shadow: 0 0 15px #3b5998;
+  text-shadow: 0 0 15px #3b5998;
+  transition: all 1s ease;
+}
+
+#instagram{
+  border: 3px solid #bc2a8d;
+  box-shadow: 0 0 15px #bc2a8d;
+  transition: all 1s ease;
+}
+
+.social_media_div li a:hover i {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/* Component Cards */
 
 body .container {
   display: flex;
@@ -48,9 +121,7 @@ body .container .card:nth-child(3n + 2) .box .content a {
 body .container .card:nth-child(3n + 0) .box .content a {
   background: #23c186;
 }
-/* body .container .card:nth-child(4n + 0) .box .content a {
-  background: #e39c25;
-} */
+
 
 body .container .card .box {
   position: absolute;
@@ -125,13 +196,13 @@ body .container .card .box .content a {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   transition: 0.5s;
 }
+
 body .container .card .box .content a:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
   background: #fff;
   color: #000;
 }
 
-/* content h3 */
 
 .content h3 {
   text-transform: capitalize;
