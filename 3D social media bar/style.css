@@ -52,6 +52,24 @@ body{
     background: white;
     transform: translateX(50px) rotateY(90deg);
 }
+.insta-front{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+.insta-right{
+    color: #d6249f;
+}
+.twitter-front{
+    background-color: #1DA1F2;
+}
+.twitter-right{
+    color: #1DA1F2;
+}
+.fb-front{
+    background-color: #3b5998;
+}
+.fb-right{
+    color: #3b5998;
+}
 .contact-us{
     font-family: 'Montserrat', sans-serif;
     font-size: 55px;
