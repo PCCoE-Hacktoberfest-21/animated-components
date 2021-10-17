@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=Signika);
+ *, *:after, *:before {
+	 -webkit-box-sizing: border-box;
+	 -moz-box-sizing: border-box;
+	 box-sizing: border-box;
+}
+ html {
+	 height: 100%;
+}
+ body {
+	 height: 100%;
+	 background: #3e253c;
+	 font-size: 16px;
+	 font-family: 'Signika', sans-serif;
+	 color: white;
+	 overflow-x: hidden;
+}
+ body:before, body:after {
+	 content: '';
+	 position: fixed;
+	 width: 89.8%;
+	 max-width: 1170px;
+	 left: 50%;
+	 transform: translateX(-50%);
+	 right: auto;
+	 height: 50%;
+	 z-index: -1;
+}
+ body:before {
+	 top: 0;
+	 background-color: #f4bd89;
+	 transition: all 0.8s;
+}
+ body:after {
+	 top: 50%;
+	 background-color: #71495b;
+}
+ body.icon-1-bg:before {
+	 background: #f4bd89;
+}
+ body.icon-2-bg:before {
+	 background: orange;
+}
+ body.icon-3-bg:before {
+	 background: skyblue;
+}
+ h1, h2, p {
+	 margin-bottom: 20px;
+}
+ h1 {
+	 font-size: 3em;
+}
+ h2 {
+	 font-size: 2.3em;
+}
+ p {
+	 font-size: 1.25em;
+}
+ header {
+	 position: relative;
+	 background-color: #3e253c;
+	 height: 50%;
+	 text-align: center;
+}
+ header h1 {
+	 position: absolute;
+	 top: calc(50% - 24px);
+	 left: calc(50% - 171px);
+}
+ .contain {
+	 max-width: 1170px;
+	 margin: 0 auto;
+}
+ .contain li {
+	 position: relative;
+	 z-index: 2;
+	 min-height: 525px;
+	 margin-left: 420px;
+	 background-color: #3e253c;
+	 padding: 6em 2em;
+}
+ .contain li:before, .contain li:after {
+	 content: '';
+	 position: absolute;
+	 width: 420px;
+	 right: 100%;
+	 z-index: 2;
+}
+ .contain li:before {
+	 top: 0;
+	 height: 325px;
+	 background-repeat: no-repeat;
+}
+ .contain li:after {
+	 top: 325px;
+	 bottom: 0;
+	 background-image: url(https://codyhouse.co/demo/icons-filling-effect/img/cd-pattern-large.svg);
+}
+ .contain li h2, .contain li p {
+	 transform: translate3d(0, 110%, 0);
+	 opacity: 0;
+}
+ .contain li h2.in-view, .contain li p.in-view {
+	 transform: translate3d(0, 0, 0);
+	 opacity: 1;
+}
+ .contain li h2 {
+	 transition: all 0.5s cubic-bezier(0.66, 0, 0.625, 1.39);
+}
+ .contain li p {
+	 transition: all 0.5s 0.05s cubic-bezier(0.66, 0, 0.625, 1.39);
+}
+ .icon-1:before {
+	 background-image: url(https://codyhouse.co/demo/icons-filling-effect/img/cd-icon-1-large.svg);
+}
+ .icon-2:before {
+	 background-image: url(https://codyhouse.co/demo/icons-filling-effect/img/cd-icon-1-large.svg);
+}
+ .icon-3:before {
+	 background-image: url(https://codyhouse.co/demo/icons-filling-effect/img/cd-icon-1-large.svg);
+}
+ .icon-4:before {
+	 background-image: url(https://codyhouse.co/demo/icons-filling-effect/img/cd-icon-1-large.svg);
+}
+ footer {
+	 height: 50%;
+	 background: #3e253c;
+}
+    
