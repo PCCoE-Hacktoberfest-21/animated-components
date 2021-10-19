@@ -1,0 +1,9 @@
+<svg width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M72 44C72 59.464 59.464 72 44 72L44 80C63.8823 80 80 63.8822 80 44L72 44Z" fill="#F2F2F2"/>
+<path d="M40 44C40 59.464 27.464 72 12 72L12 80C31.8823 80 48 63.8822 48 44L40 44Z" fill="#F2F2F2"/>
+<path d="M44 80L44 40" stroke="#F2F2F2" stroke-width="8"/>
+<line x1="76" y1="8" x2="76" y2="48" stroke="#F2F2F2" stroke-width="8"/>
+<line x1="12" y1="8" x2="12" y2="80" stroke="#F2F2F2" stroke-width="8"/>
+<line y1="-4" x2="4" y2="-4" transform="matrix(1 0 0 -1 12 72)" stroke="#F2F2F2" stroke-width="8"/>
+<line y1="-4" x2="4" y2="-4" transform="matrix(1 0 0 -1 44 72)" stroke="#F2F2F2" stroke-width="8"/>
+</svg>

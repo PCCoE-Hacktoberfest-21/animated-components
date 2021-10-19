@@ -1,0 +1,7 @@
+<svg width="208" height="88" viewBox="0 0 208 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 44L184 44" stroke="#F2F2F2" stroke-width="8"/>
+<line y1="-4" x2="172" y2="-4" transform="matrix(1 0 0 -1 12 8)" stroke="#F2F2F2" stroke-width="8"/>
+<line x1="12" y1="8" x2="12" y2="80" stroke="#F2F2F2" stroke-width="8"/>
+<path d="M192 28C192 34.6274 186.627 40 180 40L180 48C191.046 48 200 39.0457 200 28L192 28Z" fill="#F2F2F2"/>
+<path d="M180 16C186.627 16 192 21.3726 192 28L200 28C200 16.9543 191.046 8 180 8L180 16Z" fill="#F2F2F2"/>
+</svg>
