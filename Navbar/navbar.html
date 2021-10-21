@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="navbar.css" rel="stylesheet">
+    <title>Navbar</title>
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  
+    <!--JQuery Library-->
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+</head>
+<body>
+    <body>
+        <div class="navbar">
+            <ul>
+                <span class="name">Navbar</span>
+                
+                <li class="list-item-active 1">
+                    <b class="left-curve"></b>
+                    <b class="right-curve"></b>
+                    <a>
+                        <i class="fa fa-home"></i>
+                        Home
+                    </a>
+                </li>
+                <li class="list-item">
+                    <b class="left-curve"></b>
+                    <b class="right-curve"></b>
+                    <a>
+                        <i class="fa fa-book"></i>
+                        My Courses
+                    </a>
+                </li>
+                <li class="list-item">
+                    <b class="left-curve"></b>
+                    <b class="right-curve"></b>
+                    <a>
+                        <i class="fa fa-user"></i>
+                        My Profile
+                    </a>
+                </li>
+                <li class="list-item">
+                    <b class="left-curve"></b>
+                    <b class="right-curve"></b>
+                    <a>
+                        <i class="far fa-address-book"></i>
+                        Address Book
+                    </a>
+                </li>
+                <li class="list-item">
+                    <b class="left-curve"></b>
+                    <b class="right-curve"></b>
+                    <a>
+                        <i class="fas fa-chart-line"></i>
+                        Charts
+                    </a>
+                </li>
+                <li class="list-item">
+                    <b class="left-curve"></b>
+                    <b class="right-curve"></b>
+                    <a>
+                        <i class="fas fa-calendar-alt"></i>
+                        Calender
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+    <!------------------------------------------ Javascript ----------------------------------------->
+    
+    <script>
+        $(function () {
+            $("li").click(function (e) {
+                e.preventDefault();
+                $("li").removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+    </script>
+   
+</body>
+</html>
