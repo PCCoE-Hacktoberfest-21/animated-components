@@ -1,0 +1,7 @@
+<svg width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="60" y1="76" x2="28" y2="76" stroke="#F2F2F2" stroke-width="8"/>
+<line x1="12" y1="8" x2="12" y2="60" stroke="#F2F2F2" stroke-width="8"/>
+<line x1="76" y1="8" x2="76" y2="60" stroke="#F2F2F2" stroke-width="8"/>
+<path d="M28 72C21.3726 72 16 66.6274 16 60L8 60C8 71.0457 16.9543 80 28 80L28 72Z" fill="#F2F2F2"/>
+<path d="M72 60C72 66.6274 66.6274 72 60 72L60 80C71.0457 80 80 71.0457 80 60L72 60Z" fill="#F2F2F2"/>
+</svg>

@@ -1,0 +1,86 @@
+body {
+    background-color: #282828;
+    font-family: 'Montserrat', sans-serif;
+}
+svg {
+    cursor: pointer;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transition: transform .2s cubic-bezier(.55,0,.1,1);
+    will-change: transform;
+}
+.icon:hover .outer {
+    transform: translateX(-50%) translateY(-50%) translateX(-11px) translateY(-19px);
+}
+.icon:hover .gradient {
+    transform: translateX(-50%) translateY(-50%) translateX(11px) translateY(19px);
+}
+.outer {
+    transform: translateX(-50%) translateY(-50%) translateX(-15px) translateY(-22.5px);
+    z-index: 1;
+}
+.outer path {
+    stroke-dasharray: 300px;
+    stroke-dashoffset: -300px;
+    transition: stroke-dashoffset 2.8s linear;
+}
+.outer path.stroke {
+    stroke-dashoffset: 0;
+}
+.gradient {
+    transform: translateX(-50%) translateY(-50%) translateX(15px) translateY(22.5px);
+    transition: transform .2s;
+    z-index: 2;
+}
+.gradient .border path {
+    stroke-dasharray: 555px;
+    stroke-dashoffset: -555px;
+    transition: stroke-dasharray 2s linear;
+}
+.gradient .border path.animate {
+    animation: drawPath linear forwards infinite;
+    animation-duration: 4s;
+    stroke-dasharray: 138.75px;
+}
+.gradient .border path.animate:nth-of-type(2) {
+    animation-delay: 1s;
+}
+.gradient .border path.animate:nth-of-type(3) {
+    animation-delay: 2s;
+}
+.gradient .border path.animate:nth-of-type(4) {
+    animation-delay: 2s;
+}
+.gradient .line path {
+    stroke-dasharray: 121px;
+    stroke-dashoffset: -121px;
+    transition: stroke-dasharray 1s linear 1s;
+}
+.gradient .line path.animate {
+    animation: drawPath linear forwards infinite;
+    animation-duration: 2s;
+    stroke-dasharray: 60.5px;
+}
+.gradient .line path:nth-child(2) {
+    animation-delay: 1s;
+}
+.gradient .line--3 path {
+    stroke-dasharray: 70px;
+    stroke-dashoffset: -70px;
+    transition: stroke-dasharray 1s linear 1s;
+}
+.gradient .line--3 path.animate {
+    stroke-dasharray: 35px;
+}
+.no-offset {
+    animation: none !important;
+    stroke-dasharray: 0 !important;
+    stroke-dashoffset: 0px !important;
+    transition: none !important;
+}
+@keyframes drawPath {
+    to {
+        stroke-dashoffset: 0px;
+   }
+}
