@@ -1,43 +1,37 @@
-
+body{
+  overflow-x: hidden;
+}
 .name {
-margin-left: 0%;
-  float: left;
-  margin-right: 28%;
+  position: relative;
+  left: 0;
+  width: 100%;
+  top: 1rem;
   font-size: 1.7rem;
   font-family:Georgia, 'Times New Roman', Times, serif;
   color: rgb(253, 253, 253);
-  margin-top: 7px;
 }
 .navbar {
-  position: fixed;
+  position: absolute;
   left: 0px;
   top: 0px;
-  height: auto;
+  height: 12.8%;
   width: 100%;
   background: #075ac7;
 }
 .navbar ul {
   display: flex;
   list-style-type: none;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 0px;
-  margin-bottom: 0px;
-  padding-left: 40px;
+  justify-content: space-between;
 }
 
 .navbar ul li {
-    display: inline;
-    list-style: none;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 22px;
-    font-size: 1.2rem;
-    border-radius: 15px 15px 0px 0px;
     position: relative;
+    display: block;
+    list-style: none;
+    padding: .5rem 2rem;
+    font-size: 1.2rem;
+    right: 2%;
+    border-radius: 15px 15px 0px 0px;
 }
 
 .navbar ul li.active {
@@ -99,35 +93,81 @@ margin-left: 0%;
 .navbar ul li.active b.right-curve {
   display: block;
 }
-@media only screen and (max-width: 1495px) {
-    .name{
-        margin-right: 15%;
-    }
-}
-@media only screen and (max-width: 1043px) {
+ @media only screen and (max-width: 1495px) {
     *{
-        background: cover;
-        width: 105%;
-        margin-left: -25px ;
+        font-size: 1rem;
+        overflow-x: hidden;
+        text-align: center;
+        align-items: center;
     }
-    .navbar ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        list-style-type: none;
-        margin-block-start: 1em;
-        margin-top: 30px;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        padding-inline-start: 0px;
-        margin-bottom: 0px;
-        padding-left: 30px;
-      }
-      .navbar ul li{
-          margin-top: 30px; 
-          text-align: center;
-          margin-bottom: 0%;
-          padding: 2%;
-      }
-}
+    .navbar .name{
+        left: -15%;
+    }
+    .navbar {
+        height: 14%;
+    } 
+    .navbar ul li{
+        top: .5rem;
+        right: 5%;
+    }
+ }
+ @media only screen and (max-width: 811px) {
+    *{
+        font-size: .9rem;
+        overflow-x: hidden;
+        text-align: center;
+        align-items: center;
+        
+    }
+    .navbar {
+        height: 12.7%;
+    } 
+    .navbar ul li{
+        top: .5rem;
+        right: 5%;
+    }
+ }
+ @media only screen and (max-width: 693px) {
+    *{
+        font-size: .8rem;
+        overflow-x: hidden;
+        text-align: center;
+        align-items: center;
+        
+    }
+    .navbar {
+        height: 11.1%;
+    } 
+    .navbar ul li{
+        top: .5rem;
+        right: 5%;
+    }
+ }
+ @media only screen and (max-width: 617px) {
+    *{
+        font-size: .8rem;
+        overflow-x: hidden;
+        text-align: center;
+        align-items: center;
+    }
+    .navbar {
+        height: 11%;
+    } 
+    .navbar ul li{
+        right: 5%;
+    }
+ }
+ @media only screen and (max-width: 567px) {
+    *{
+        font-size: .7rem;
+        overflow-x: hidden;
+        text-align: center;
+        align-items: center;
+    }
+    .navbar{
+        height: 40%;
+    } 
+    .navbar ul li{
+        right: 5%;
+    }
+ }
