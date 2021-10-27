@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.card_container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  
+}
+
+.card_container .card {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 1px 5px #0001, 0 2px 15px #0001;
+  border: 1px solid #0003;
+}
+
+.card_container .card .img {
+  height: 400px;
+}
+
+.card_container .card .img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s ease-in-out;
+}
+
+.card_container .card:hover .img img {
+  transform: scale(1.1) rotate(1deg);
+}
+
+.card_container .card .card_footer {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #2196f342;
+  color: #fff;
+  bottom: -100%;
+  box-shadow: 0 -8px 10px #0002;
+  padding: 35px 10px;
+  backdrop-filter: blur(15px);
+  transition: bottom 0.5s;
+  transition-delay: 1.6s;
+}
+
+.card_container .card:hover .card_footer {
+  bottom: 0;
+  transition-delay: 0s;
+}
+
+.card_container .card .card_footer .card_text {
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: 0.5s;
+  transition-delay: 1s;
+}
+
+.card_container .card:hover .card_footer .card_text {
+  opacity: 1;
+  transform: translateY(0);
+  text-shadow: 0 1px 4px #0002;
+}
+
+.card_container .card .card_footer .card_text > * {
+  margin: 0;
+  padding: 2px 15px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card_container .card .card_footer .card_text .designation {
+  font-size: 14px;
+}
+
+.card_container .card .card_footer .social_box {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  text-shadow: 0 0 4px #0003;
+}
+
+.card_container .card .card_footer .social_box a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: 0.4s ease-in;
+  cursor: pointer;
+  transition-delay: calc(0.15s * var(--i));
+}
+
+.card_container .card:hover .card_footer .social_box a {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card_container .card:hover .card_footer .social_box a .icon {
+  transition: 0.2s ease-in-out;
+}
+
+.card_container .card:hover .card_footer .social_box a:hover .icon {
+  color: #80b0ff;
+  text-shadow: 0 1px 4px #fff1;
+}
