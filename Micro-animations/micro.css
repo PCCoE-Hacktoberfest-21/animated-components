@@ -1,0 +1,306 @@
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .row{
+    flex-direction: row;
+  }
+  
+  .column{
+      flex-direction: column;
+  }
+  
+  button{
+    padding: 15px;
+    margin: 10px;
+    background: #f5f5f5;
+    font-family: Helvetica;
+    height: 60px;
+    width: 200px;
+    border: none;
+    border-radius: 12px;
+    transition: .5s ease-in-out;
+  }
+  
+  .fade:hover, .fade:focus, .fade:active{
+    background: #FF69B4;
+    transition: .35s ease-in-out;
+  }
+  
+  @keyframes buzz {
+    50% {
+      transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+      transform: translateX(-3px) rotate(-2deg);
+    }
+  }
+  
+  .buzz:hover, .buzz:focus, .buzz:active {
+    background: #CE2029;
+    color: #ffffff;
+    animation-name: buzz;
+    animation-duration: 0.15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes grow {
+    to {
+      transform: scale(1.1);
+    }
+  }
+  .grow:hover, .grow:focus, .grow:active {
+    background: #FF7518;
+    animation-name: grow;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  .zoom {
+    transform: translateZ(0);
+    transition-property: color;
+    transition-duration: 0.3s;
+  }
+  
+  .zoom:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #FFBF00;
+    border-radius: 12px;
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+  
+  .zoom:hover:before, .zoom:focus:before, .zoom:active:before {
+    transform: scale(1);
+  }
+  
+  .highlight {
+    transform: translateZ(0);
+    transition-property: color;
+    transition-duration: 0.3s;
+  }
+  .highlight:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #F1FF0D;
+    border-radius: 12px;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+  
+  .highlight:hover:before, .highlight:focus:before, .highlight:active:before {
+    transform: scaleX(1);
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(-8px);
+    }
+    50% {
+      transform: translateY(-4px);
+    }
+    100% {
+      transform: translateY(-8px);
+    }
+  }
+  
+  @keyframes float-in-place {
+    100% {
+      transform: translateY(-8px);
+    }
+  }
+  
+  .float {
+    transform: perspective(1px) translateZ(0);
+  }
+  
+  .float:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    transition-duration: 0.3s;
+    transition-property: transform, opacity;
+  }
+  
+  .float:hover, .float:focus, .float:active {
+    background: #7FFF00;
+    animation-name: float-in-place, float;
+    animation-duration: .3s, 1.5s;
+    animation-delay: 0s, .3s;
+    animation-timing-function: ease-out, ease-in-out;
+    animation-iteration-count: 1, infinite;;
+    animation-fill-mode: forwards;
+    animation-direction: normal, alternate;
+  }
+  
+  .float:hover:before, .float:focus:before, .hvr-float-float:active:before {
+    opacity: 1;
+    transform: translateY(5px);
+  }
+  
+  @keyframes sink {
+    0% {
+      transform: translateY(8px);
+    }
+    50% {
+      transform: translateY(4px);
+    }
+    100% {
+      transform: translateY(8px);
+    }
+  }
+  
+  @keyframes sink-in-place {
+    100% {
+      transform: translateY(8px);
+    }
+  }
+  
+  .sink:hover, .sink:focus, .sink:active {
+    background: #00C5CD;
+    animation-name: sink-in-place, sink;
+    animation-duration: .3s, 1.5s;
+    animation-delay: 0s, .3s;
+    animation-timing-function: ease-out, ease-in-out;
+    animation-iteration-count: 1, infinite;
+    animation-fill-mode: forwards;
+    animation-direction: normal, alternate;
+  }
+  
+  .flood {
+    transform: perspective(1px) translateZ(0);
+    transition-property: color;
+    transition-duration: 0.5s;
+  }
+  
+  .flood:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #187BCD;
+    border-radius: 12px;
+    transform: scaleY(0);
+    transform-origin: 50% 100%;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+  }
+  
+  .flood:hover, flood:focus, flood:active{
+    color: #FFFFFF;
+  }
+  .flood:hover:before, .flood:focus:before, .flood:active:before {
+    transform: scaleY(1);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  }
+  
+  @keyframes ripple {
+    100% {
+      top: -12px;
+      right: -12px;
+      bottom: -12px;
+      left: -12px;
+      opacity: 0;
+    }
+  }
+  
+  .ripple{
+    transform: perspective(1px) translateZ(0);
+  }
+  
+  .ripple:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 12px;
+    animation-duration: 1s;
+    animation-delay: .3s;
+    animation-timing-function: ease-out, ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: normal, alternate;
+  }
+  
+  .ripple:hover, ripple:focus, ripple:active{
+    background: #330066;
+    color: #FFFFFF;
+    border:  #330066 6px solid;
+  }
+  
+  .ripple:hover:before, .ripple:focus:before, .ripple:active:before {
+    border: solid 2px;
+    animation-name: ripple;
+  }
+  
+  @keyframes wobble {
+    16.65% {
+      transform: translate(8px, 8px);
+    }
+    33.3% {
+      transform: translate(-6px, -6px);
+    }
+    49.95% {
+      transform: translate(4px, 4px);
+    }
+    66.6% {
+      transform: translate(-2px, -2px);
+    }
+    83.25% {
+      transform: translate(1px, 1px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  .wobble {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .wobble:hover, .wobble:focus, .wobble:active {
+    background: #4D004D;
+    color: #FFFFFF;
+    animation-name: wobble;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+  }
+  
