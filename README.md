@@ -4,15 +4,9 @@ Create animated components using HTML, CSS, JS and get them featured [here](http
 
 ## Latest Announcements 📢
 
-🔴 As we have a lot of people willing to contribute and fewer issues, please make sure you work on the task assigned to you within 5 days (or inform the maintainers that you are still working on it, by commenting on the issue itself)
+🔴 The PRs made in this repo will not be considered for the official hacktoberfest (conducted by digitalocean).
 
-🔴 If we do not receive any updates from your end then we will have to assign the task to another willing contributor.
-
-🔴 If you come across an issue that has been open for a while but has no updates from the assigned person, you may comment on it to get assigned to the issue.
-
-🔴 Issues which have the `unassigned` label can be worked on. You can comment on thees issues and get assigned to them.
-
-🔴 Some issues can be worked upon by multiple people so if you see the `unassigned` label there you may comment on it
+🔴 You can still contribute to this repo to participate in [PCCoE Hacktoberfest](https://www.instagram.com/p/CU9ozf6jWa-/?utm_medium=share_sheet) and win exciting prizes.
 
 ## Contribution Guidelines
 
