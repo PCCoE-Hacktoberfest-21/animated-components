@@ -1,0 +1,94 @@
+
+svg {
+	width:100%;
+	height:100%;
+}
+.eye {
+	animation: blink 1s linear forwards 4.5s ,blink 1s linear forwards 8s;
+}
+#error {
+	animation: fill-labels 1s linear forwards 4.4s;
+}
+#text_404 {
+	fill:#6c79a8;
+	opacity:0;
+	animation: fill-text 3s linear forwards 6.5s;
+}
+#printer {
+    animation: bounce-in-top 1.1s both 1.4s;
+}
+#background {
+	animation: fill-bg 0.4s linear forwards 1s;
+}
+
+#elem {
+	animation: translate 2.5s linear forwards 4s;
+}
+
+@keyframes fill-bg {
+	100% {
+	fill:#effafc;
+	}
+}
+
+@keyframes fill-labels {
+	100% {
+	fill:#000000;
+	}
+}
+@keyframes translate {
+	100% {
+	transform:translateY(400px);
+	}
+}
+@keyframes blink {
+	0% {fill:#ffffff;}
+	15%{fill:#ffffff;}
+	20%{fill:#000000;}
+	25%{fill:#ffffff;}
+	40%{fill:#ffffff;}
+	45%{fill:#000000;}
+	50%{fill:#ffffff;}
+	75%{fill:#ffffff;}
+	100%{fill:#ffffff;}
+}
+
+@keyframes fill-text {
+	100%{opacity:1;}
+}
+
+@keyframes bounce-in-top {
+  0% {      opacity:0;
+            transform: translateY(-500px);
+            animation-timing-function: ease-in;
+
+  }
+  38% {     opacity:0.38;
+            transform: translateY(0);
+            animation-timing-function: ease-out;
+
+  }
+  55% {     opacity:0.55;
+            transform: translateY(-65px);
+            animation-timing-function: ease-in;
+  }
+  72% {     opacity:0.72;
+            transform: translateY(0);
+            animation-timing-function: ease-out;
+  }
+  81% {     opacity:0.81;
+            transform: translateY(-28px);
+  }
+  90% {     opacity:0.9;
+            transform: translateY(0);
+            animation-timing-function: ease-out;
+  }
+  95% {     opacity:0.95;
+            transform: translateY(-8px);
+            animation-timing-function: ease-in;
+  }
+  100% {     opacity:1;
+            transform: translateY(0);
+            animation-timing-function: ease-out;
+  }
+}
